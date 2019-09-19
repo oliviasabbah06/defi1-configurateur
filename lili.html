@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+var bonjour = prompt("bonjour bienvenue, quel est votre nom ?"); 
+// Variable couleur //
+var choixCouleur;
+// variable pack //
+var choixPack;
+// variable moteur //
+var moteur;
+// variable prix // 
+var prixCouleur = 200;
+var prixPackSpeed = 350;
+var prixPackMusic = 400;
+var solde = 500;
+// variable ajouter ou supprimer // 
+var ajouterOption = "ajouter"; 
+var enleverOption = "enlever"; 
+// Variable choix // 
+var choixAjouter;
+var choixEnlever;
+
+
+
+
+
+
+choixAjouter= prompt('voulez-vous ajouter une option ou enlever une option ?');
+
+switch(choix) {
+
+     //Couleur //
+     case 'couleur':
+        choixCouleur = prompt('vous souhaitez du noir ou du rouge');
+                
+        // Noir //
+        if(choixCouleur == 'noir'  || choixCouleur == 'rouge') {       
+            solde = solde - prixCouleur;
+        }
+        else {
+            alert('Vous pouvez juste choisir deux couleur noir ou rouge');
+        }
+        break;
+
+         // Pack //
+    case 'pack':
+
+        choixPack = prompt('Vous souhaitez avoir le packspeed ou le packmusic ?');
+        if(choixPack == 'packmusic') {
+            alert('Votre packmusic à été ajouter');
+            solde = solde - prixPackMusic;
+        }
+        else if(choixPack == 'packspeed') {
+            alert ('votre packspeed a éré ajouter');
+            solde = solde - prixPackSpeed;
+        }
+        else {
+            alert ('Vous pouvez choisir soit le packmusic ou le packspeed');
+        }
+        break;
+}           
+
+
+
+
+</script>
+
+</body>
+</html>
+
